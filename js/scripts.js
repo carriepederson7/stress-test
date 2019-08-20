@@ -14,5 +14,12 @@ $(document).ready(function(){
   console.log(copingResponses);
   console.log(stressResponses);
 
+  if (stressResponses.length < copingResponses.length) {
+    $("#excellent").show();
+  } else if (stressResponses.length > copingResponses.length) {
+    $("#needs-improvement").show();
+  } else if (stressResponses.length === copingResponses.length) {
+    $("#average").show();
+  };
   });
 });
