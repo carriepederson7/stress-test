@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Stress Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>This is a stress test</h1>
+      </div>
+        <form id="stress-survey">
+          <div class="form-group">
+            <p>Which symptoms of stress do you feel?</p>
+            <input type="checkbox" name="stress-symptoms" value="sleep-loss"> sleep-loss. <br>
+            <input type="checkbox" name="stress-symptoms" value="blood-pressure"> blood-pressure. <br>
+            <input type="checkbox" name="stress-symptoms" value="existential-angst"> existential angst. <br>
+            <input type="checkbox" name="stress-symptoms" value="overwhelmed">feeling overwhelmed. <br>
+            <input type="checkbox" name="stress-symptoms" value="tired"> feeling tired. <br>
+            <input type="checkbox" name="stress-symptoms" value="depression">depression. <br>
+          </div>
+          <div id="coping-strategies">
+            <p>How are you coping with stress?</p>
+            <input type="checkbox" name="stress-coping" value="meditation">meditation. <br>
+            <input type="checkbox" name="stress-coping" value="petting cat">petting cat. <br>
+            <input type="checkbox" name="stress-coping" value="exercise">exercise. <br>
+            <input type="checkbox" name="stress-coping" value="relaxing">relaxing. <br>
+            <input type="checkbox" name="stress-coping" value="eating-healthy">eating healthy <br>
+          </div>
+            <button type="submit">Submit Survey</button>
+
+          </form>
+
+        <div id="excellent">
+          <h2>Excellent</h2>
+          <p>You show low signs of stess and you are implementing plenty of  strategies to cope.</p>
+        </div>
+
+        <div id="average">
+          <h2>Average</h2>
+          <p>You show average signs of stess and you are implementing a normal amount of  strategies to cope.</p>
+        </div>
+
+        <div id="needs-improvement">
+          <h2>Average</h2>
+          <p>You show more than average signs of stess and you need to implement more coping strategies.</p>
+        </div>
+
+
+
+    </div>
+  </body>
+</html>
